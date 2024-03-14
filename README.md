@@ -122,6 +122,6 @@ HEAD - служебный файл из директории `.git`, котор�
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged/tracked -- "git commit" --> comitted/tracked;
-  tracked -- "Изменен файл" --> modified/tracked -- "git add" --> staged/tracked -- "git commit" --> comitted/tracked;
+  untracked -- "git add" --> staged/tracked -- "git commit" --> comitted/tracked -- "Изменен файл" --> modified/tracked;
+  modified/tracked -- "git add" --> staged/tracked;
 ```
